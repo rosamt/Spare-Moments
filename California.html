@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <script src="featherlight.js" type="text/javascript" charset="utf-8"></script>
     <link href="featherlight.css" type="text/css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     
     <meta charset="UTF-8">
     <title>title</title>
@@ -16,7 +17,33 @@
      body {
         background: url("cali.jpg") no-repeat fixed center;
         background-size: cover;
+         font-family: 'Fira Sans Condensed';font-size: 22px;
+            color: 	#A0522D;
+        }
+    
+    .jumbotron{
+        background-color:rgba(255,255,255,.5);
     }
+    
+    #main-wrapper {
+          
+          padding-left:50px;
+          padding-right:50px;
+          /*background-color: rgba(255, 255, 255, 0.7);*/
+          text-align:center;
+        }
+    
+    .lightbox{
+          display:none;
+          padding: 10px;
+      }
+      
+      .lightbox p {
+           padding-left:20px;
+           padding-right:20px;
+           text-align:center;
+      }
+      
     </style>
           
         <body>
@@ -27,10 +54,47 @@
                 <h1 class="display-3">California</h1>
             </div>
         </div>
+        
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">About the Site</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="NY.html"> New York <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="California.html"> California</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="England.html">England</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Malaysia.html">Malaysia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="About.html">About The Developers</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     
     
     <div class="container" id="main-wrapper">
-      <img src="gantry.jpg">
+      <img src="joshua.jpg" style = "width:100%;margin-top:20px;">
       <div id="accordion" role="tablist" aria-multiselectable="true">
   <div class="card">
     <div class="card-header" role="tab" id="headingOne">
@@ -44,11 +108,13 @@
     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
         <a href="#" data-featherlight="#mylightbox">Open element in lightbox</a>
         <div class="card-block">
-        <p> This park is located in New York's diverse borough, Queens. 
-        Moreoever this park is located in Long Island City, and has a beautiful view of the East 
-        River. In this 12-acre park, there is a playground, a beautiful boardwalk and alot of structures
-        that are visually appealing to the eye. There are plenty of seats to sit on to enjoy the view 
-        and multiple games can be played at the park too. <a href="https://parks.ny.gov/parks/149/details.aspx"> Visit Now </a> </p>
+        <p> If you are lost in to so many different activites in California,there is one location you can't miss out on! Joshua
+        Tree National Park is located in Southern California, it has vast different 
+        rugged rock formations and desert landscapes. Not only that the park is named 
+        Joshua Tree National park because there is alot of twisted bristled yucca trees called
+        the Joshua trees. The park has a combination of two deserts, the Colorado and the Mojave desert.
+        This place is a must to go and travel because there is alot of different landscapes and formations, 
+        so you won't get tired. <a href="https://www.nps.gov/jotr/index.htm"> Visit Now </a> </p>
       </div>
     </div>
   </div>
@@ -62,12 +128,12 @@
     </div>
     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="card-block">
-        Enjoy the East River with these lovely tunes. 
-        <p><a href="https://vimeo.com/198334559"> Ed Sheeran -</a> Shape of You </p>
-        <p><a href="https://www.youtube.com/watch?v=1k8craCGpgs"> Journey-</a> Don't Stop Believing</p>
-        <p><a href="https://www.youtube.com/watch?v=dKIARZYW9eM"> Drake </a> Controlla</p>
-        <p><a href="https://www.youtube.com/watch?v=FV-HPOHu8mY"> Jimmy Eat World-</a> The Middle</p>
-        <p><a href="https://www.youtube.com/watch?v=aK3TROzVRiE"> Coldplay</a> Fix You</p>
+        Listen to the songs while viewing the Joshua trees and the desert. 
+        <p><a href="https://www.youtube.com/watch?v=8Xv_Hg8o1fw"> Coldplay -</a> Clocks </p>
+        <p><a href="https://www.youtube.com/watch?v=hbMk7_c6nAE"> Zedd,Grey -</a> Adrenaline </p>
+        <p><a href="https://www.youtube.com/watch?v=OXWrjWDQh7Q"> OneRepublic </a> Wherever I Go</p>
+        <p><a href="https://www.youtube.com/watch?v=qDLJ3pUZm9A"> Toto-</a> Africa</p>
+        <p><a href="https://www.youtube.com/watch?v=a59gmGkq_pw"> Major Lazer (ft. Justin Bieber & MØ)</a> Coldwater </p>
       </div>
     </div>
   </div>
@@ -76,33 +142,31 @@
     <div class="card-header" role="tab" id="headingThree">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Book Reccomendations
+          Book Recomendations
         </a>
       </h5>
     </div>
     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
       <div class="card-block">
-       <a href= "https://www.amazon.com/Outsiders-S-Hinton/dp/014240733X">
-         <img src="theoutsiders.jpg">
-       ></a>
-       <p> No one ever said life was easy. But Ponyboy is pretty sure that he's got things figured out. He knows that he can count on his brothers, Darry and Sodapop. 
-       And he knows that he can count on his friends—true friends who would do anything for him, like Johnny and Two-Bit. But not on much else besides trouble with the Socs, a vicious gang of rich kids whose idea of a good time is beating up on “greasers” like Ponyboy. 
-       At least he knows what to expect—until the night someone takes things too far.</p>
-       <a href="https://www.amazon.com/Nightingale-Novel-Kristin-Hannah/dp/0312577222">
-         <img src="nighting.jpg">
-       ></a>
-       <p>The Nightingale tells the stories of two sisters, separated by years and experience, by ideals, passion and circumstance, each embarking on her own dangerous path toward survival,
-       love, and freedom in German-occupied, war-torn France--a heartbreakingly beautiful novel that celebrates the resilience of the human spirit and the durability of women. It is a novel for everyone, a novel for a lifetime.</p>
+        <!--<a href= "https://www.amazon.com/Book-Thief-Markus-Zusak/dp/0375842209">-->
+         <a href="#" data-featherlight="#book5lightbox">
+         <img src="thebookthief.jpg"
+         ></a>
+       
+       <!--<a href= "https://www.amazon.com/Where-Fern-Grows-Wilson-Rawls/dp/0440412676">-->
+         <a href="#" data-featherlight="#book6lightbox">
+         <img src="redfern.jpg"
+         ></a>
+       
       </div>
     </div>
   </div>
-</div>
+
     
     
     
     </div>
-     <div class="container" id="main-wrapper">
-      <img src="hayden-planetarium2.jpg">
+      <img src="sm.jpg" style = "width:100%;margin-top:20px;">
       <div id="accordion" role="tablist" aria-multiselectable="true">
   
   <div class="card">
@@ -116,10 +180,8 @@
     <div id="collapseFour" class="collapse show" role="tabpanel" aria-labelledby="headingFour">
         <a href="#" data-featherlight="#mylightbox">Open element in lightbox</a>
         <div class="card-block">
-        <p>"Our mission is to bring the frontier of astrophysical research to the public via exhibitry, books, public programs, and on-line resources."~Mission of the Hayden Plantetarium</p> 
-        The Hayden Planetarium is both teen and family friendly. The exibition is presented in 3D format and appeals to modern while telling a story from the past.
-        The Hayden Planetarium is located within the American Museum of Natural History which includes additional entertainment for everyone. 
-        <p>Are you interested, then don't forget to plan your visit. <a href="http://www.amnh.org/plan-your-visit">Buy Tickets Now!</a></p> 
+        <p> Santa Monica State Beach is an iconic destination that draws visitors from around the globe. 
+        It is 3 miles long, covers 245 acres of sand and is managed by the City of Santa Monica in cooperation with California State Parks. <p></p>Have fun at this beach! <a href="https://www.smgov.net/Departments/CCS/content.aspx?id=53687097577">Look here for more information!</a></p> 
       </div>
     </div>
   </div>
@@ -134,12 +196,12 @@
     </div>
     <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
       <div class="card-block">
-        Just sit down and relax.
-        <p><a href="https://itunes.apple.com/us/album/lust-for-life/id1256684768">Lana Del Rey-</a>Lust for Life</p> 
-        <p><a href="http://www.thecollectionband.com/">The Collection-</a>Sing of the Moon</p>
-        <p><a href="https://postmodernjukeboxshop.com/collections/the-essentials">Creep-</a>Vintage Postmodern Jukebox Radiohead Cover ft. Haley Reinhart</p>
-        <p><a href="https://alanwalker.lnk.to/faded">Alan Walker-</a>Faded</p>
-        <p><a href="http://www.maxhellskitchen.com/">MAX-</a>Lights Down Low feat. gnash</p>
+        Turn up with these tunes!
+        <p><a href="https://www.youtube.com/watch?v=8aefuWGmKTY&list=PL8KQXy_mAmdfKIuWqiFHe-kFo_OKlNaaB&index=23">Hamilton Cast-</a> Non-Stop</p> 
+        <p><a href="https://www.youtube.com/watch?v=6mqbAnrtWHo"> Sia ft. Sean Paul-</a> Cheap Thrills</p>
+        <p><a href="https://www.youtube.com/watch?v=ReNKBjMPOlM">Don Omar -</a> Danza Kuduro</p>
+        <p><a href="https://www.youtube.com/watch?v=8ELbX5CMomE"> Justin Bieber-</a> Sorry</p>
+        <p><a href="https://www.youtube.com/watch?v=3xUfCUFPL-8&index=9&list=PLcwND5gvMVv4NZebT5bFYmUyq9u-8unT_">Beyoncé-</a> XO </p>
       </div>
     </div>
   </div>
@@ -153,20 +215,52 @@
     </div>
     <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
       <div class="card-block">
-        <a href="https://www.amazon.com/Fault-Our-Stars-John-Green/dp/014242417X">
-          <img src="stars.jpg" 
-        ></a>
-        <p>"Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel’s story is about to be completely rewritten."</p>    
-        <a href="https://www.barnesandnoble.com/w/giver-lois-lowry/1100295882?ean=9780544336261#productInfoTabs">
-          <img src="giver.jpg" 
-        ></a>
-      <p>"The Giver, the 1994 Newbery Medal winner, has become one of the most influential novels of our time. The haunting story centers on twelve-year-old Jonas, who lives in a seemingly ideal, if colorless, world of conformity and contentment. Not until he is given his life assignment as the Receiver of Memory does he begin to understand the dark, complex secrets behind his fragile community. Lois Lowry has written three companion novels to The Giver, including Gathering Blue, Messenger, and Son."</p>
+        <!--<a href="https://www.amazon.com/Beach-House-Georgia-Bockoven/dp/0061727644/ref=sr_1_3?s=books&ie=UTF8&qid=1502985622&sr=1-3&keywords=books+to+read+in+a+beach">-->
+          <a href="#" data-featherlight="#book7lightbox">
+          <img src="tbh.jpg" 
+          ></a>
+        
+        <!--<a href="https://www.amazon.com/Uglies-Scott-Westerfeld/dp/1442419814">-->
+          <a href="#" data-featherlight="#book8lightbox">
+          <img src="uglies.jpg" 
+          ></a>
+        
       
       
       </div>
     </div>
   </div>
-    <div class="lightbox" id="mylightbox">This div will be opened in a lightbox</div>
     
+    
+    <!-- book lightboxes -->
+  <div class="lightbox" id="book5lightbox">
+      <a href="https://www.amazon.com/Book-Thief-Markus-Zusak/dp/0375842209"><img src="thebookthief.jpg" align="left" ></a>
+      <p> It is 1939. Nazi Germany. The country is holding its breath. Death has never been busier, and will become busier still.
+        Liesel Meminger is a foster girl living outside of Munich, who scratches out a meager existence for herself by stealing when she encounters something she can’t resist–books. With the help of her accordion-playing foster father, she learns to read and shares her stolen books with her neighbors during bombing raids as well as with the Jewish man hidden in her basement.</p> 
+  </div>
+    
+  <div class="lightbox" id="book6lightbox">
+      <a href="https://www.amazon.com/Where-Fern-Grows-Wilson-Rawls/dp/0440412676"><img src="redfern.jpg" align="left" ></a>
+      <p> Billy has long dreamt of owning not one, but two, dogs. So when he’s finally able to save up enough money for two pups to call his own—Old Dan and Little Ann—he’s ecstatic. It doesn’t matter that times are tough; together they’ll roam the hills of the Ozarks.
+   Soon Billy and his hounds become the finest hunting team in the valley. Stories of their great achievements spread throughout the region, and the combination of Old Dan’s brawn, Little Ann’s brains, and Billy’s sheer will seems unbeatable.
+   But tragedy awaits these determined hunters—now friends—and Billy learns that hope can grow out of despair, and that the seeds of the future can come from the scars of the past.</p>
+  </div>
+    
+  <div class="lightbox" id="book7lightbox">
+      <a href="https://www.amazon.com/Beach-House-Georgia-Bockoven/dp/0061727644/ref=sr_1_3?s=books&ie=UTF8&qid=1502985622&sr=1-3&keywords=books+to+read+in+a+beach"><img src="tbh.jpg" align="left" ></a>
+      <p>The beach house is a peaceful haven, a place to escape everyday problems. Here, three families find their feelings intensified and their lives transformed each summer.
+          When thirty-year-old Julia, mourning the death of her husband, decides to sell the Santa Cruz beach house they owned together, she sets in motion a final summer that will change the lives of all the families who rent it year after year. Teenaged Chris discovers the bittersweet joy of first love. Maggie and Joe, married sixty-five years, courageously face a separation that even their devotion cannot prevent. The married woman Peter yearns for suddenly comes within his reach. And Julia ultimately finds the strength to rebuild her life—something she once thought impossible.
+          With equal measures of heartbreak and happiness, bestselling author Georgia Bockoven's unforgettable novel tells of the beauty of life and the power of love, and speaks to every woman who has ever clung to a child or loved a man.</p>
+  </div>
+  
+  <div class="lightbox" id="book8lightbox">
+      <a href="https://www.amazon.com/Uglies-Scott-Westerfeld/dp/1442419814"><img src="uglies.jpg" align="left" ></a>
+      <p>The Uglies series has more than 3 million books in print, has been translated into twenty-seven languages, and spent more than fifty weeks on the New York Times bestseller list. Now all four books feature fresh new covers and will reach an even wider audience. Tally’s adventures begin in Uglies, where she learns the truth about what life as a Pretty really means.</p>
+  </div>
+  
+  
+  </div>
+  
+  <!-- end of book lightboxes -->
     </body>
 </html>

@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans Condensed' rel='stylesheet'>
     <script src="featherlight.js" type="text/javascript" charset="utf-8"></script>
     <link href="featherlight.css" type="text/css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     
     <meta charset="UTF-8">
     <title>title</title>
 </head>
     <style>
      body {
-        background: url("land.jpg") no-repeat fixed center;
+        background: url("england2.jpg") no-repeat fixed center;
         background-size: cover;
+        font-family: 'Fira Sans Condensed';font-size: 22px;
+            color: 	#A0522D;
     }
+     .jumbotron{
+        background-color:rgba(255,255,255,.5);
+    }
+    #main-wrapper {
+          
+          padding-left:50px;
+          padding-right:50px;
+          /*background-color: rgba(255, 255, 255, 0.7);*/
+          text-align:center;
+        }
+    .lightbox{
+          display:none;
+          padding: 10px;
+      }
+      .lightbox p {
+           padding-left:20px;
+           padding-right:20px;
+           text-align:center;
+         }
     </style>
           
         <body>
@@ -27,10 +48,44 @@
                 <h1 class="display-3">England</h1>
             </div>
         </div>
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">About the Site</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="NY.html"> New York <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="California.html"> California</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="England.html">England</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Malaysia.html">Malaysia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="About.html">About The Developers</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     <div class="container" id="main-wrapper">
-      <img src="england.jpg">
+      <img src="england.jpg" style = "width:100%;margin-top:20px;">
       <div id="accordion" role="tablist" aria-multiselectable="true">
   <div class="card">
     <div class="card-header" role="tab" id="headingOne">
@@ -42,13 +97,10 @@
     </div>
 
     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-        <a href="#" data-featherlight="#mylightbox">Open element in lightbox</a>
         <div class="card-block">
-        <p> The new pier was originally 
-        Moreoever this park is located in Long Island City, and has a beautiful view of the East 
-        River. In this 12-acre park, there is a playground, a beautiful boardwalk and alot of structures
-        that are visually appealing to the eye. There are plenty of seats to sit on to enjoy the view 
-        and multiple games can be played at the park too. <a href="https://parks.ny.gov/parks/149/details.aspx"> Visit Now </a> </p>
+        <p>"The new pier was originally named The Brighton Marine Palace and was designed by Richard St George Moore (1858-1926)"</p>
+        <p>The Brighton Pier provides entertainment that includes rides and food. Air Race and The Booster have appield to thrill seekers making it the main attraction.
+        Rides are available for all ages. Not only is The Brighton Pier based on attractions but it is also based on amazing food. From Fish & Chips to fruit filled crepes. Eager to visit then stop waisting time and purchase tickets<a href="https://brightonpier.merlintickets.co.uk/"> TODAY!</a></p>
       </div>
     </div>
   </div>
@@ -63,11 +115,11 @@
     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="card-block">
         Enjoy the East River with these lovely tunes. 
-        <p><a href="https://vimeo.com/198334559"> Ed Sheeran -</a> Shape of You </p>
-        <p><a href="https://www.youtube.com/watch?v=1k8craCGpgs"> Journey-</a> Don't Stop Believing</p>
-        <p><a href="https://www.youtube.com/watch?v=dKIARZYW9eM"> Drake </a> Controlla</p>
-        <p><a href="https://www.youtube.com/watch?v=FV-HPOHu8mY"> Jimmy Eat World-</a> The Middle</p>
-        <p><a href="https://www.youtube.com/watch?v=aK3TROzVRiE"> Coldplay</a> Fix You</p>
+        <p><a href="https://www.youtube.com/watch?v=wnJ6LuUFpMo"> J. Balvin, Willy William -</a> Mi Gente </p>
+        <p><a href="https://www.youtube.com/watch?v=bra_jlITzmI"> Portugal. The Man -</a> Feel It Still</p>
+        <p><a href="https://https://www.youtube.com/watch?v=PMivT7MJ41M"> Bruno Mars -</a> That’s What I Like</p>
+        <p><a href="https://www.youtube.com/watch?v=FV-HPOHu8mY"> Kris Kross Amsterdam & Conor Maynard ft. Ty Dolla $ign -</a> Are You Sure?</p>
+        <p><a href="https://www.youtube.com/watch?v=fiuCqZuhu4o"> Serani -</a> No Games</p>
       </div>
     </div>
   </div>
@@ -76,36 +128,35 @@
     <div class="card-header" role="tab" id="headingThree">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Book Reccomendations
+          Book Recomendations
         </a>
       </h5>
     </div>
     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
       <div class="card-block">
-
-         <a href="https://www.barnesandnoble.com/w/giver-lois-lowry/1100295882?ean=9780544336261#productInfoTabs">
-          <img src="giver.jpg" 
+         <!--<a href="https://www.barnesandnoble.com/w/we-were-liars-e-lockhart/1116530632">-->
+          <p>CLICK ON US TO CHECK US OUT!</p>
+          <a href="#" data-featherlight="#book1lightbox">
+          <img src="liars.jpg"></a>
+      
+       <!--<a href="https://www.barnesandnoble.com/w/salt-to-the-sea-ruta-sepetys/1121907650">-->
+          <a href="#" data-featherlight="#book2lightbox">
+          <img src="salt.jpg" 
         ></a>
-      <p>"The Giver, the 1994 Newbery Medal winner, has become one of the most influential novels of our time. The haunting story centers on twelve-year-old Jonas, who lives in a seemingly ideal, if colorless, world of conformity and contentment. Not until he is given his life assignment as the Receiver of Memory does he begin to understand the dark, complex secrets behind his fragile community. Lois Lowry has written three companion novels to The Giver, including Gathering Blue, Messenger, and Son."</p>
-       <a href="https://www.barnesandnoble.com/w/giver-lois-lowry/1100295882?ean=9780544336261#productInfoTabs">
-          <img src="giver.jpg" 
-        ></a>
-      <p>"The Giver, the 1994 Newbery Medal winner, has become one of the most influential novels of our time. The haunting story centers on twelve-year-old Jonas, who lives in a seemingly ideal, if colorless, world of conformity and contentment. Not until he is given his life assignment as the Receiver of Memory does he begin to understand the dark, complex secrets behind his fragile community. Lois Lowry has written three companion novels to The Giver, including Gathering Blue, Messenger, and Son."</p>
       </div>
     </div>
   </div>
 </div>
     
+
     
     
-    </div>
-     <div class="container" id="main-wrapper">
-      <img src="hayden-planetarium2.jpg">
+      <img src="lake.jpg" style = "width:100%;margin-top:20px;">
       <div id="accordion" role="tablist" aria-multiselectable="true">
   
   <div class="card">
     <div class="card-header" role="tab" id="headingFour">
-      <h5 class="mb-0">
+      <h5 class="mb-0" style = "width:100%;margin-top:20px;">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
           About this Location
         </a>
@@ -114,10 +165,10 @@
     <div id="collapseFour" class="collapse show" role="tabpanel" aria-labelledby="headingFour">
         <a href="#" data-featherlight="#mylightbox">Open element in lightbox</a>
         <div class="card-block">
-        <p>"Our mission is to bring the frontier of astrophysical research to the public via exhibitry, books, public programs, and on-line resources."~Mission of the Hayden Plantetarium</p> 
-        The Hayden Planetarium is both teen and family friendly. The exibition is presented in 3D format and appeals to modern while telling a story from the past.
-        The Hayden Planetarium is located within the American Museum of Natural History which includes additional entertainment for everyone. 
-        <p>Are you interested, then don't forget to plan your visit. <a href="http://www.amnh.org/plan-your-visit">Buy Tickets Now!</a></p> 
+        <p>"The Lake District National Park is in the northwest corner of England, in the county of Cumbria. We've mountains, valleys, villages, towns, coastline and of course lakes!"-Lake District National Park</p> 
+        The Lake District Nation Park helps teens enjoy nature by providing beautiful locations.
+        Need to relax from a long school year than don't miss out on this amazing location that is in fact stress-free. 
+        <p>Sit down and forget about technology and enjoy nature. <a href="http://www.lakedistrict.gov.uk/visiting/planyourvisit">Plan Your Visit.</a></p> 
       </div>
     </div>
   </div>
@@ -133,11 +184,11 @@
     <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
       <div class="card-block">
         Just sit down and relax.
-        <p><a href="https://itunes.apple.com/us/album/lust-for-life/id1256684768">Lana Del Rey-</a>Lust for Life</p> 
-        <p><a href="http://www.thecollectionband.com/">The Collection-</a>Sing of the Moon</p>
-        <p><a href="https://postmodernjukeboxshop.com/collections/the-essentials">Creep-</a>Vintage Postmodern Jukebox Radiohead Cover ft. Haley Reinhart</p>
-        <p><a href="https://alanwalker.lnk.to/faded">Alan Walker-</a>Faded</p>
-        <p><a href="http://www.maxhellskitchen.com/">MAX-</a>Lights Down Low feat. gnash</p>
+        <p><a href="https://www.youtube.com/watch?v=fM8V1XOI-14">Kane Brown -</a>What Ifs ft. Lauren Alaina</p> 
+        <p><a href="https://www.youtube.com/watch?v=4ogc5Pbtxa0">Beyoncé -</a>Daddy Lessons</p>
+        <p><a href="https://www.youtube.com/watch?v=1YX7Lj1Fso8">James Arthur -</a>I Am</p>
+        <p><a href="https://www.youtube.com/watch?v=v-Dur3uXXCQ">Kesha -</a>Praying</p>
+        <p><a href="https://www.youtube.com/watch?v=aSe1adndzfs">Lauv-</a>The Other </p>
       </div>
     </div>
   </div>
@@ -151,20 +202,46 @@
     </div>
     <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
       <div class="card-block">
-        <a href="https://www.amazon.com/Fault-Our-Stars-John-Green/dp/014242417X">
-          <img src="stars.jpg" 
+        <p>CHECK US OUT!</p>
+        <!--<a href="https://www.amazon.com/The-Unbecoming-Mara-Dyer-Trilogy/dp/1442421770/">-->
+          <a href="#" data-featherlight="#book3lightbox">
+          <img src="mara.jpg" 
         ></a>
-        <p>"Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel’s story is about to be completely rewritten."</p>    
-        <a href="https://www.barnesandnoble.com/w/giver-lois-lowry/1100295882?ean=9780544336261#productInfoTabs">
-          <img src="giver.jpg" 
+           
+        <!--<a href="https://www.amazon.com/Alex-Approximately-Jenn-Bennett/dp/148147877X/ref=pd_sim_14_24?_encoding=UTF8&pd_rd_i=148147877X&pd_rd_r=4SN0SSJXPBZY000XFHEG&pd_rd_w=4j8PG&pd_rd_wg=soKGX&psc=1&refRID=4SN0SSJXPBZY000XFHEG">-->
+          <a href="#" data-featherlight="#book4lightbox">
+          <img src="alex.jpg" 
         ></a>
-      <p>"The Giver, the 1994 Newbery Medal winner, has become one of the most influential novels of our time. The haunting story centers on twelve-year-old Jonas, who lives in a seemingly ideal, if colorless, world of conformity and contentment. Not until he is given his life assignment as the Receiver of Memory does he begin to understand the dark, complex secrets behind his fragile community. Lois Lowry has written three companion novels to The Giver, including Gathering Blue, Messenger, and Son."</p>
+      
       
       
       </div>
     </div>
   </div>
-    <div class="lightbox" id="mylightbox">This div will be opened in a lightbox</div>
+  
+  <!-- book lightboxes -->
+  <div class="lightbox" id="book1lightbox">
+      <a href="https://www.barnesandnoble.com/w/we-were-liars-e-lockhart/1116530632"><img src="liars.jpg" align="left" ></a>
+      <p>"Haunting, sophisticated . . . a novel so twisty and well-told that it will appeal to older readers as well as to adolescents." —Wall Street Journal</p>
+  </div>
+  
+  <div class="lightbox" id="book2lightbox">
+      <a href="https://www.barnesandnoble.com/w/salt-to-the-sea-ruta-sepetys/1121907650"><img src="salt.jpg" align="left" ></a>
+      <p>"World War II is drawing to a close in East Prussia and thousands of refugees are on a desperate trek toward freedom, many with something to hide. Among them are Joana, Emilia, and Florian, whose paths converge en route to the ship that promises salvation, the Wilhelm Gustloff. Forced by circumstance to unite, the three find their strength, courage, and trust in each other tested with each step closer to safety."</p>
+  </div>
+  
+  <div class="lightbox" id="book3lightbox">
+      <a href="https://www.amazon.com/The-Unbecoming-Mara-Dyer-Trilogy/dp/1442421770/"><img src="salt.jpg" align="left" ></a>
+      <p>Mara Dyer doesn’t know if she is crazy or haunted—all she knows is that everyone around her is dying in this suspenseful and “strong, inventive tale” (Kirkus Reviews).</p>
+  </div>
+  <div class="lightbox" id="book4lightbox">
+      <a href="https://www.amazon.com/Alex-Approximately-Jenn-Bennett/dp/148147877X/ref=pd_sim_14_24?_encoding=UTF8&pd_rd_i=148147877X&pd_rd_r=4SN0SSJXPBZY000XFHEG&pd_rd_w=4j8PG&pd_rd_wg=soKGX&psc=1&refRID=4SN0SSJXPBZY000XFHEG"><img src="salt.jpg" align="left" ></a>
+      <p>"In this delightfully charming teen spin on You’ve Got Mail, the one guy Bailey Rydell can’t stand is actually the boy of her dreams—she just doesn’t know it yet."</p>
+  </div>
     
+    
+  </div>
+  
+  <!-- end of book lightboxes -->
     </body>
 </html>

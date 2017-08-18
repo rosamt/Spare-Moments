@@ -18,14 +18,15 @@
       .lightbox {
         
         display:none;
-        
+        padding: 10px;
       }
       
     </style>
 </head>
     <body> 
 
-         
+        <a href="#" data-featherlight="#book1lightbox">Click here to open my lightbox</a>
+
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-3">New York</h1>
@@ -79,14 +80,7 @@
   </div>
 </div>
     </div>
-    <a href="#" data-featherlight="#fl1">Open element in lightbox</a>
-    <div class="lightbox" id="fl1">This div will be opened in a lightbox</div>
+    <div class="lightbox" id="book1lightbox">This div will be opened in a lightbox</div>
 
-    <script>
-      $('a.fl1').featherlight({
-	      targetAttr: 'href'
-      });
-    </script>
-    
     </body>
 </html>

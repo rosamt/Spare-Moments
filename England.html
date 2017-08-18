@@ -38,6 +38,15 @@
            padding-right:20px;
            text-align:center;
          }
+          #accordion,.card {
+          background-color:rgba(255,255,255,.5);
+       }
+           #map {
+        height: 400px;
+        width: 100%;
+        margin-top:30px;
+       }
+      
     </style>
           
         <body>
@@ -163,7 +172,6 @@
       </h5>
     </div>
     <div id="collapseFour" class="collapse show" role="tabpanel" aria-labelledby="headingFour">
-        <a href="#" data-featherlight="#mylightbox">Open element in lightbox</a>
         <div class="card-block">
         <p>"The Lake District National Park is in the northwest corner of England, in the county of Cumbria. We've mountains, valleys, villages, towns, coastline and of course lakes!"-Lake District National Park</p> 
         The Lake District Nation Park helps teens enjoy nature by providing beautiful locations.
@@ -235,7 +243,7 @@
       <p>Mara Dyer doesn’t know if she is crazy or haunted—all she knows is that everyone around her is dying in this suspenseful and “strong, inventive tale” (Kirkus Reviews).</p>
   </div>
   <div class="lightbox" id="book4lightbox">
-      <a href="https://www.amazon.com/Alex-Approximately-Jenn-Bennett/dp/148147877X/ref=pd_sim_14_24?_encoding=UTF8&pd_rd_i=148147877X&pd_rd_r=4SN0SSJXPBZY000XFHEG&pd_rd_w=4j8PG&pd_rd_wg=soKGX&psc=1&refRID=4SN0SSJXPBZY000XFHEG"><img src="salt.jpg" align="left" ></a>
+      <a href="https://www.amazon.com/Alex-Approximately-Jenn-Bennett/dp/148147877X/ref=pd_sim_14_24?_encoding=UTF8&pd_rd_i=148147877X&pd_rd_r=4SN0SSJXPBZY000XFHEG&pd_rd_w=4j8PG&pd_rd_wg=soKGX&psc=1&refRID=4SN0SSJXPBZY000XFHEG"><img src="alex.jpg" align="left" ></a>
       <p>"In this delightfully charming teen spin on You’ve Got Mail, the one guy Bailey Rydell can’t stand is actually the boy of her dreams—she just doesn’t know it yet."</p>
   </div>
     
@@ -243,5 +251,57 @@
   </div>
   
   <!-- end of book lightboxes -->
+  
+        <div id="map"></div>
+    <script>
+      function initMap() {
+        var palace = {lat: 50.816856, lng: -0.136738};
+        var history = {lat: 54.460870, lng: -3.088625};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: palace
+        });
+        var marker = new google.maps.Marker({
+          position: palace,
+          map: map
+        });
+        var marker2 = new google.maps.Marker({
+          position: history,
+          map: map
+        });
+      }
+    </script>
+
+
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9VIi0JzdURKk3xv46S3YTtgEGjqZCO1Y&callback=initMap">
+    </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     </body>
 </html>

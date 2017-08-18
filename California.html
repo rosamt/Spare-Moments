@@ -43,6 +43,15 @@
            padding-right:20px;
            text-align:center;
       }
+        #accordion,.card {
+          background-color:rgba(255,255,255,.5);
+       }
+       
+        #map {
+        height: 400px;
+        width: 100%;
+        margin-top:30px;
+       }
       
     </style>
           
@@ -106,7 +115,6 @@
     </div>
 
     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-        <a href="#" data-featherlight="#mylightbox">Open element in lightbox</a>
         <div class="card-block">
         <p> If you are lost in to so many different activites in California,there is one location you can't miss out on! Joshua
         Tree National Park is located in Southern California, it has vast different 
@@ -178,7 +186,6 @@
       </h5>
     </div>
     <div id="collapseFour" class="collapse show" role="tabpanel" aria-labelledby="headingFour">
-        <a href="#" data-featherlight="#mylightbox">Open element in lightbox</a>
         <div class="card-block">
         <p> Santa Monica State Beach is an iconic destination that draws visitors from around the globe. 
         It is 3 miles long, covers 245 acres of sand and is managed by the City of Santa Monica in cooperation with California State Parks. <p></p>Have fun at this beach! <a href="https://www.smgov.net/Departments/CCS/content.aspx?id=53687097577">Look here for more information!</a></p> 
@@ -262,5 +269,34 @@
   </div>
   
   <!-- end of book lightboxes -->
+  
+  
+  <div id="map"></div>
+    <script>
+      function initMap() {
+        var park2 = {lat: 33.873415, lng: -115.900992};
+        var beach = {lat: 34.012516, lng: -118.499940};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: park2
+        });
+        var marker = new google.maps.Marker({
+          position: park2,
+          map: map
+        });
+        var marker2 = new google.maps.Marker({
+          position: beach,
+          map: map
+        });
+      }
+    </script>
+
+
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9VIi0JzdURKk3xv46S3YTtgEGjqZCO1Y&callback=initMap">
+    </script>
+  
+  
     </body>
 </html>
